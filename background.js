@@ -1,15 +1,10 @@
-function search(info){
-  return function(info){
+chrome.contextMenus.create({
+  title: "メルカリで検索",
+  type: "normal",
+  contexts: ["selection"],
+  onclick: function(info){
     var selection = info.selectionText;
     var url = "https://www.mercari.com/jp/search/?keyword="+selection;
     chrome.tabs.create({url : url});
   }
-}
-
-
-chrome.contextMenus.create({
-  "title" : "メルカリで検索",
-  "type"  : "normal",
-  "contexts" : ["all"],
-  "onclick" : search()
 });
