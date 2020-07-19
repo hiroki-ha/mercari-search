@@ -1,7 +1,7 @@
 ﻿{
     "manifest_version": 2,
     "name": "選択範囲をメルカリ検索くん",
-    "description": "mercari-search",
+    "description": "選択した範囲の文字列をメルカリで検索します。",
     "version": "1.0",
     "background" : {
      "scripts" : ["background.js"]
@@ -13,6 +13,8 @@
       "https://*/*"
     ],
     "icons" : {
-      "16" : "images/size48.png"
+      "16" : "images/size16.png",
+      "48" : "images/size48.png",
+      "128": "images/size128.png"
     }
 }

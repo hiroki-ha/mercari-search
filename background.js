@@ -1,5 +1,5 @@
 chrome.contextMenus.create({
-  title: "メルカリで検索",
+  title: "メルカリで「%s」を検索",
   type: "normal",
   contexts: ["selection"],
   onclick: function(info){
